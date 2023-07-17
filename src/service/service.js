@@ -4,8 +4,7 @@ const {Cli} = require(`./cli/main`);
 const {ExitCode} = require(`../constants`);
 
 const DEFAULT_COMMAND = `--help`;
-console.log(process.argv);
-const [, , userCommand = ``, ...userArguments] = process.argv;
+const [, , userCommand = ``, ...userArguments] = process.argv.filter((arg) => arg !== `--`);
 
 if (!Cli[userCommand]) {
   Cli[DEFAULT_COMMAND].run();

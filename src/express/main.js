@@ -17,7 +17,7 @@ if (!SESSION_SECRET) {
   throw new Error(`SESSION_SECRET environment variable is not defined`);
 }
 
-const DEFAULT_PORT = 8080;
+const DEFAULT_PORT = 3341;
 const PUBLIC_DIR = `public`;
 const UPLOAD_DIR = `upload`;
 const app = express();

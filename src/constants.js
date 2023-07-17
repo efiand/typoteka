@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  DEFAULT_API_PORT: 3000,
+  DEFAULT_API_PORT: 3342,
   FIRST_ID: 1,
   ARTICLES_PER_PAGE: 8,
   USERNAME_PATTERN: `^[А-ЯА-яЁёA-Za-z]{1,100}$`,
